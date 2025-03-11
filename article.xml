@@ -164,6 +164,10 @@ ArrayStats.vectors    134217728  avgt   25  4487263831.693 ± 32044099.047  ns/o
 <screen linenumbering="unnumbered">Benchmark           (arraySize)  Mode  Cnt           Score          Error  Units</screen>
 </section>
 </section>
+<section xml:id="_analysis">
+<title>Analysis:</title>
+<simpara>The results from our Java 17 run are counter to what we expect from the orignal Java Vector API test runs as per <link xl:href="https://medium.com/@tomerr90/javas-new-vector-api-how-fast-is-it-part-1-1b4c2b573610">https://medium.com/@tomerr90/javas-new-vector-api-how-fast-is-it-part-1-1b4c2b573610</link></simpara>
+</section>
 <section xml:id="_conclusions">
 <title>Conclusions.</title>
 
