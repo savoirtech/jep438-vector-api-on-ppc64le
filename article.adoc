@@ -182,3 +182,5 @@ It is not a goal to support vector instructions on CPU architectures other than 
 ____
 
 == Conclusions.
+
+From our data above, pure implementation use of Vector seems to stay close to Array performance wise. When 'branch-less code' is desired (vectorizing if-statements) we see performance degradation. This leads us to proceding with caution if your code is attempting use vector api while targeting PPC64LE.

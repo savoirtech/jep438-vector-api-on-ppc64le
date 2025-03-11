@@ -216,3 +216,9 @@ Lets go back to <https://openjdk.org/jeps/438> and
 > —  JEP-438 and JEP-448
 
 # Conclusions.
+
+From our data above, pure implementation use of Vector seems to stay
+close to Array performance wise. When 'branch-less code' is desired
+(vectorizing if-statements) we see performance degradation. This leads
+us to proceding with caution if your code is attempting use vector api
+while targeting PPC64LE.
