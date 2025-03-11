@@ -161,6 +161,26 @@ alt="ComplexExpressionNoSuperWord" />
 <img src="./assets/images/ArrayStats-J21.png" alt="ArrayStats-J21" />
 </figure>
 
+## ArrayStat Java 17 on Xeon E-2378
+
+    Benchmark           (arraySize)  Mode  Cnt          Score         Error  Units
+    ArrayStats.arrays            64  avgt   25        107.331 ±       1.809  ns/op
+    ArrayStats.arrays           512  avgt   25        627.478 ±       4.180  ns/op
+    ArrayStats.arrays          4096  avgt   25       4694.807 ±      14.099  ns/op
+    ArrayStats.arrays         32768  avgt   25     168781.982 ±    2024.674  ns/op
+    ArrayStats.arrays        262144  avgt   25    1673768.937 ±   24404.886  ns/op
+    ArrayStats.arrays       2097152  avgt   25   13563443.991 ±  198680.783  ns/op
+    ArrayStats.arrays      16777216  avgt   25  111342926.431 ± 2769759.098  ns/op
+    ArrayStats.arrays     134217728  avgt   25  908709016.578 ± 3801799.608  ns/op
+    ArrayStats.vectors           64  avgt   25         48.167 ±       0.004  ns/op
+    ArrayStats.vectors          512  avgt   25        165.846 ±       0.542  ns/op
+    ArrayStats.vectors         4096  avgt   25       1053.841 ±       5.038  ns/op
+    ArrayStats.vectors        32768  avgt   25      11007.992 ±       3.730  ns/op
+    ArrayStats.vectors       262144  avgt   25      91793.273 ±     333.415  ns/op
+    ArrayStats.vectors      2097152  avgt   25     809176.104 ±    3229.474  ns/op
+    ArrayStats.vectors     16777216  avgt   25    7921394.224 ±   27940.795  ns/op
+    ArrayStats.vectors    134217728  avgt   25   64577194.475 ±  349795.706  ns/op
+
 # Analysis:
 
 The results from our Java 17 run are counter to what we expect from the
