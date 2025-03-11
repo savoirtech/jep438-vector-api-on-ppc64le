@@ -34,6 +34,10 @@ Then we’ll run JDK 21 on the ArrayStat test suite.
     SimpleSum.vectors     16777216  avgt   25   8948626.473 ±  17838.771  ns/op
     SimpleSum.vectors    134217728  avgt   25  68802749.490 ± 212584.976  ns/op
 
+<figure>
+<img src="./assets/images/SimpleSum.png" alt="SimpleSum" />
+</figure>
+
 ## SimpleSumNoSuperWord
 
     Benchmark          (arraySize)  Mode  Cnt         Score        Error  Units
@@ -53,6 +57,11 @@ Then we’ll run JDK 21 on the ArrayStat test suite.
     SimpleSum.vectors      2097152  avgt   25    688177.372 ±   5897.562  ns/op
     SimpleSum.vectors     16777216  avgt   25   8960951.699 ±  25284.762  ns/op
     SimpleSum.vectors    134217728  avgt   25  68847173.025 ± 176985.022  ns/op
+
+<figure>
+<img src="./assets/images/SimpleSumNoSuperWord.png"
+alt="SimpleSumNoSuperWord" />
+</figure>
 
 ## ComplexExpression
 
@@ -74,6 +83,11 @@ Then we’ll run JDK 21 on the ArrayStat test suite.
     ComplexExpression.vectors     16777216  avgt   25   22789411.756 ±  1479.213  ns/op
     ComplexExpression.vectors    134217728  avgt   25  182282093.428 ± 22571.844  ns/op
 
+<figure>
+<img src="./assets/images/ComplexExpression.png"
+alt="ComplexExpression" />
+</figure>
+
 ## ComplexExpressionNoSuperWord
 
     Benchmark                  (arraySize)  Mode  Cnt          Score       Error  Units
@@ -94,6 +108,11 @@ Then we’ll run JDK 21 on the ArrayStat test suite.
     ComplexExpression.vectors     16777216  avgt   25   22788875.459 ±  7985.146  ns/op
     ComplexExpression.vectors    134217728  avgt   25  182284124.759 ± 18715.489  ns/op
 
+<figure>
+<img src="./assets/images/ComplexExpressionNoSuperWord.png"
+alt="ComplexExpressionNoSuperWord" />
+</figure>
+
 ## ArrayStats
 
     Benchmark           (arraySize)  Mode  Cnt           Score          Error  Units
@@ -113,6 +132,10 @@ Then we’ll run JDK 21 on the ArrayStat test suite.
     ArrayStats.vectors      2097152  avgt   25    69712280.978 ±   358104.987  ns/op
     ArrayStats.vectors     16777216  avgt   25   557562874.749 ±  3136531.662  ns/op
     ArrayStats.vectors    134217728  avgt   25  4487263831.693 ± 32044099.047  ns/op
+
+<figure>
+<img src="./assets/images/ArrayStats.png" alt="ArrayStats" />
+</figure>
 
 ## ArrayStats Java 21
 

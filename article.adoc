@@ -36,6 +36,8 @@ SimpleSum.vectors     16777216  avgt   25   8948626.473 ±  17838.771  ns/op
 SimpleSum.vectors    134217728  avgt   25  68802749.490 ± 212584.976  ns/op
 ```
 
+image::./assets/images/SimpleSum.png[alt=SimpleSum,width=480,height=640,align="center"]
+
 === SimpleSumNoSuperWord
 ```
 Benchmark          (arraySize)  Mode  Cnt         Score        Error  Units
@@ -56,6 +58,7 @@ SimpleSum.vectors      2097152  avgt   25    688177.372 ±   5897.562  ns/op
 SimpleSum.vectors     16777216  avgt   25   8960951.699 ±  25284.762  ns/op
 SimpleSum.vectors    134217728  avgt   25  68847173.025 ± 176985.022  ns/op
 ```
+image::./assets/images/SimpleSumNoSuperWord.png[alt=SimpleSumNoSuperWord,width=480,height=640,align="center"]
 
 === ComplexExpression
 ```
@@ -77,6 +80,7 @@ ComplexExpression.vectors      2097152  avgt   25    2845657.941 ±   543.106  n
 ComplexExpression.vectors     16777216  avgt   25   22789411.756 ±  1479.213  ns/op
 ComplexExpression.vectors    134217728  avgt   25  182282093.428 ± 22571.844  ns/op
 ```
+image::./assets/images/ComplexExpression.png[alt=ComplexExpression,width=480,height=640,align="center"]
 
 === ComplexExpressionNoSuperWord
 ```
@@ -98,6 +102,8 @@ ComplexExpression.vectors      2097152  avgt   25    2845631.847 ±   555.375  n
 ComplexExpression.vectors     16777216  avgt   25   22788875.459 ±  7985.146  ns/op
 ComplexExpression.vectors    134217728  avgt   25  182284124.759 ± 18715.489  ns/op
 ```
+image::./assets/images/ComplexExpressionNoSuperWord.png[alt=ComplexExpressionNoSuperWord,width=480,height=640,align="center"]
+
 
 === ArrayStats
 
@@ -120,6 +126,7 @@ ArrayStats.vectors      2097152  avgt   25    69712280.978 ±   358104.987  ns/o
 ArrayStats.vectors     16777216  avgt   25   557562874.749 ±  3136531.662  ns/op
 ArrayStats.vectors    134217728  avgt   25  4487263831.693 ± 32044099.047  ns/op
 ```
+image::./assets/images/ArrayStats.png[alt=ArrayStats,width=480,height=640,align="center"]
 
 === ArrayStats Java 21
 
