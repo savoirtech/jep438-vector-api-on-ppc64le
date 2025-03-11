@@ -167,4 +167,19 @@ The results from our Java 17 run are counter to what we expect from the
 orignal Java Vector API test runs as per
 <https://medium.com/@tomerr90/javas-new-vector-api-how-fast-is-it-part-1-1b4c2b573610>
 
+Re-running with Java 21 did not change the outcome for ArrayStats.
+
+## Why?
+
+Lets go back to <https://openjdk.org/jeps/448> to re-read its goals &
+non-goals:
+
+    Platform agnostic — The API should be CPU architecture agnostic, enabling implementations on multiple architectures supporting vector instructions. As is usual in Java APIs, where platform optimization and portability conflict then we will bias toward making the API portable, even if that results in some platform-specific idioms not being expressible in portable code.
+
+    Reliable runtime compilation and performance on x64 and AArch64 architectures — On capable x64 architectures the Java runtime, specifically the HotSpot C2 compiler, should compile vector operations to corresponding efficient and performant vector instructions, such as those supported by Streaming SIMD Extensions (SSE) and Advanced Vector Extensions (AVX). Developers should have confidence that the vector operations they express will reliably map closely to relevant vector instructions. On capable ARM AArch64 architectures C2 will, similarly, compile vector operations to the vector instructions supported by NEON and SVE.
+
+    Graceful degradation — Sometimes a vector computation cannot be fully expressed at runtime as a sequence of vector instructions, perhaps because the architecture does not support some of the required instructions. In such cases the Vector API implementation should degrade gracefully and still function. This may involve issuing warnings if a vector computation cannot be efficiently compiled to vector instructions. On platforms without vectors, graceful degradation will yield code competitive with manually-unrolled loops, where the unroll factor is the number of lanes in the selected vector.
+
+    It is not a goal to support vector instructions on CPU architectures other than x64 and AArch64. However it is important to state, as expressed in the goals, that the API must not rule out such implementations.
+
 # Conclusions.
