@@ -181,6 +181,11 @@ alt="ComplexExpressionNoSuperWord" />
     ArrayStats.vectors     16777216  avgt   25    7921394.224 ±   27940.795  ns/op
     ArrayStats.vectors    134217728  avgt   25   64577194.475 ±  349795.706  ns/op
 
+<figure>
+<img src="./assets/images/ArrayStats-J17-Intel.png"
+alt="ArrayStats-J17-Intel" />
+</figure>
+
 # Analysis:
 
 The results from our Java 17 run are counter to what we expect from the

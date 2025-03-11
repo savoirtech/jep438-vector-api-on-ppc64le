@@ -206,6 +206,14 @@ ArrayStats.vectors       262144  avgt   25      91793.273 ±     333.415  ns/op
 ArrayStats.vectors      2097152  avgt   25     809176.104 ±    3229.474  ns/op
 ArrayStats.vectors     16777216  avgt   25    7921394.224 ±   27940.795  ns/op
 ArrayStats.vectors    134217728  avgt   25   64577194.475 ±  349795.706  ns/op</screen>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./assets/images/ArrayStats-J17-Intel.png" contentwidth="480" contentdepth="640" align="center"/>
+</imageobject>
+<textobject><phrase>ArrayStats-J17-Intel</phrase></textobject>
+</mediaobject>
+</informalfigure>
 </section>
 </section>
 <section xml:id="_analysis">
