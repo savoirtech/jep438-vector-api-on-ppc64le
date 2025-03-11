@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>JEP-438 Vector API on PPC64LE</title>
+<date>2025-03-11</date>
+</info>
+<simpara>In this post we&#8217;re going to discuss our results from testing Java&#8217;s Vector API on PPC64LE.</simpara>
+<section xml:id="_test_harness">
+<title>Test Harness:</title>
+<simpara>JavaVectorAPI-1:
+<link xl:href="https://github.com/tomerr90/JavaVectorAPI-1.git">https://github.com/tomerr90/JavaVectorAPI-1.git</link></simpara>
+</section>
+<section xml:id="_test_design">
+<title>Test Design:</title>
+<simpara>Starting with JDK 17 we will run all five test suites from JavaVectorAPI-1.</simpara>
+<simpara>Then we&#8217;ll run JDK 21 on the ArrayStat test suite.</simpara>
+</section>
+<section xml:id="_test_results">
+<title>Test Results:</title>
+
+</section>
+<section xml:id="_conclusions">
+<title>Conclusions.</title>
+
+</section>
+</article>
