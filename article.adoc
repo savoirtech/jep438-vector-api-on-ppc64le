@@ -132,7 +132,24 @@ image::./assets/images/ArrayStats.png[alt=ArrayStats,width=480,height=640,align=
 
 ```
 Benchmark           (arraySize)  Mode  Cnt           Score          Error  Units
+ArrayStats.arrays            64  avgt   25         175.309 ±        1.252  ns/op
+ArrayStats.arrays           512  avgt   25        1367.999 ±       23.131  ns/op
+ArrayStats.arrays          4096  avgt   25       20784.980 ±      141.985  ns/op
+ArrayStats.arrays         32768  avgt   25      184748.363 ±      364.153  ns/op
+ArrayStats.arrays        262144  avgt   25     1483872.771 ±      726.253  ns/op
+ArrayStats.arrays       2097152  avgt   25    11663031.064 ±   405786.141  ns/op
+ArrayStats.arrays      16777216  avgt   25    98332623.853 ±  2581086.990  ns/op
+ArrayStats.arrays     134217728  avgt   25   815526271.277 ±  6892427.913  ns/op
+ArrayStats.vectors           64  avgt   25        2025.960 ±       13.721  ns/op
+ArrayStats.vectors          512  avgt   25       17047.354 ±       96.891  ns/op
+ArrayStats.vectors         4096  avgt   25      136894.945 ±      871.571  ns/op
+ArrayStats.vectors        32768  avgt   25     1097506.746 ±     6892.098  ns/op
+ArrayStats.vectors       262144  avgt   25     8699864.863 ±    43085.837  ns/op
+ArrayStats.vectors      2097152  avgt   25    69905494.516 ±   398534.054  ns/op
+ArrayStats.vectors     16777216  avgt   25   557455911.534 ±  3346827.839  ns/op
+ArrayStats.vectors    134217728  avgt   25  4440794269.520 ± 18770580.856  ns/op
 ```
+image::./assets/images/ArrayStats-J21.png[alt=ArrayStats-J21,width=480,height=640,align="center"]
 
 == Analysis:
 
