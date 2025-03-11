@@ -171,8 +171,8 @@ Re-running with Java 21 did not change the outcome for ArrayStats.
 
 ## Why?
 
-Lets go back to <https://openjdk.org/jeps/448> to re-read its goals &
-non-goals:
+Lets go back to <https://openjdk.org/jeps/438> and
+<https://openjdk.org/jeps/448> to re-read its goals & non-goals:
 
 > Platform agnostic — The API should be CPU architecture agnostic,
 > enabling implementations on multiple architectures supporting vector
@@ -181,7 +181,7 @@ non-goals:
 > portable, even if that results in some platform-specific idioms not
 > being expressible in portable code.
 >
-> —  JEP-448
+> —  JEP-438 and JEP-448
 
 > Reliable runtime compilation and performance on x64 and AArch64
 > architectures — On capable x64 architectures the Java runtime,
@@ -194,7 +194,7 @@ non-goals:
 > compile vector operations to the vector instructions supported by NEON
 > and SVE.
 >
-> —  JEP-448
+> —  JEP-438 and JEP-448
 
 > Graceful degradation — Sometimes a vector computation cannot be fully
 > expressed at runtime as a sequence of vector instructions, perhaps
@@ -206,13 +206,13 @@ non-goals:
 > degradation will yield code competitive with manually-unrolled loops,
 > where the unroll factor is the number of lanes in the selected vector.
 >
-> —  JEP-448
+> —  JEP-438 and JEP-448
 
 > It is not a goal to support vector instructions on CPU architectures
 > other than x64 and AArch64. However it is important to state, as
 > expressed in the goals, that the API must not rule out such
 > implementations.
 >
-> —  JEP-448
+> —  JEP-438 and JEP-448
 
 # Conclusions.
