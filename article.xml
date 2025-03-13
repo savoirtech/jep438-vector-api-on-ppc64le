@@ -230,7 +230,7 @@ SimpleSum.vectors         4096  avgt   25  5745.166 ± 2.368  ns/op</screen>
 <imageobject>
 <imagedata fileref="./assets/images/SimpleSum-J21-DisableSIMD.png" contentwidth="480" contentdepth="640" align="center"/>
 </imageobject>
-<textobject><phrase>SimpleSum-J21-DisableSIMD-J17-Intel</phrase></textobject>
+<textobject><phrase>SimpleSum-J21-DisableSIMD</phrase></textobject>
 </mediaobject>
 </informalfigure>
 </section>

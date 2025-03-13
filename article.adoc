@@ -187,7 +187,7 @@ SimpleSum.vectors           64  avgt   25    50.795 ± 0.280  ns/op
 SimpleSum.vectors          512  avgt   25   716.558 ± 1.550  ns/op
 SimpleSum.vectors         4096  avgt   25  5745.166 ± 2.368  ns/op
 ```
-image::./assets/images/SimpleSum-J21-DisableSIMD.png[alt=SimpleSum-J21-DisableSIMD-J17-Intel,width=480,height=640,align="center"]
+image::./assets/images/SimpleSum-J21-DisableSIMD.png[alt=SimpleSum-J21-DisableSIMD,width=480,height=640,align="center"]
 
 
 == Analysis:

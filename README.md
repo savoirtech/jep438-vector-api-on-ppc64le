@@ -200,7 +200,7 @@ SimpleSum
 
 <figure>
 <img src="./assets/images/SimpleSum-J21-DisableSIMD.png"
-alt="SimpleSum-J21-DisableSIMD-J17-Intel" />
+alt="SimpleSum-J21-DisableSIMD" />
 </figure>
 
 # Analysis:
