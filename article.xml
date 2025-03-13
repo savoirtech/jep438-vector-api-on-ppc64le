@@ -4,7 +4,7 @@
 <article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>JEP-438 Vector API on PPC64LE</title>
-<date>2025-03-11</date>
+<date>2025-03-13</date>
 </info>
 <simpara>In this post we&#8217;re going to discuss our results from testing Java&#8217;s Vector API on PPC64LE.</simpara>
 <section xml:id="_test_harness">
@@ -251,6 +251,8 @@ JEP-438 and JEP-448
 </section>
 <section xml:id="_conclusions">
 <title>Conclusions.</title>
-<simpara>From our data above, pure implementation use of Vector seems to stay close to Array performance wise. When 'branch-less code' is desired (vectorizing if-statements) we see performance degradation. This leads us to proceding with caution if your code is attempting use vector api while targeting PPC64LE.</simpara>
+<simpara>While Java Vector API explicitly does not support PPC64LE at this time, we can observe that JIT is protecting users from general loss of performance IF vectors are utilized -  When 'branch-less code' is desired (vectorizing if-statements) we see performance degradation.</simpara>
+<simpara>For end users whom may not be familiar with the various iterations of Vector API the above analysis may prove useful when attempting to debug / test projects using this library.</simpara>
+<simpara>As a measure of hope for PPC64LE users, the JEP does state that it does not rule out the possibility to implement future support.</simpara>
 </section>
 </article>
