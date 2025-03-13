@@ -211,6 +211,12 @@ orignal Java Vector API test runs as per
 
 Re-running with Java 21 did not change the outcome for ArrayStats.
 
+The implementation of Java Vector API has direct support for x64 and
+AArch64 CPUs. As PPC64LE is neither of these when JIT produces code,
+it’ll be non-optimized to the platform. When disable automatic SIMD, we
+can see a dramatic drop in performance, similar to when we force
+branch-less vector code.
+
 ## Why?
 
 Lets go back to <https://openjdk.org/jeps/438> and
@@ -256,11 +262,6 @@ Lets go back to <https://openjdk.org/jeps/438> and
 > implementations.
 >
 > —  JEP-438 and JEP-448
-
-The implementation of Java Vector API has direct support for x64 and
-AArch64 CPUs. As PPC64LE is neither of these JIT will produce non-vector
-code. When disable automatic SIMD, we can see a dramatic drop in
-performance, similar to when we force branchless vector code.
 
 # Conclusions.
 
