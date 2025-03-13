@@ -188,23 +188,25 @@ alt="ArrayStats-J17-Intel" />
 
 ## Disabling AutoSIMD (-Xjit:disableAutoSIMD)
 
-    Benchmark           (arraySize)  Mode  Cnt           Score          Error  Units
-    ArrayStats.arrays            64  avgt   25         120.298 ±        4.036  ns/op
-    ArrayStats.arrays           512  avgt   25         799.041 ±       10.839  ns/op
-    ArrayStats.arrays          4096  avgt   25       14687.847 ±      237.710  ns/op
-    ArrayStats.arrays         32768  avgt   25      174702.519 ±      205.520  ns/op
-    ArrayStats.arrays        262144  avgt   25     1417200.858 ±      715.427  ns/op
-    ArrayStats.arrays       2097152  avgt   25    11341230.185 ±     3035.337  ns/op
-    ArrayStats.arrays      16777216  avgt   25   129893848.968 ±   209750.800  ns/op
-    ArrayStats.arrays     134217728  avgt   25  1039659460.764 ±  2244013.877  ns/op
-    ArrayStats.vectors           64  avgt   25        2494.205 ±       33.483  ns/op
-    ArrayStats.vectors          512  avgt   25       20653.064 ±      420.587  ns/op
-    ArrayStats.vectors         4096  avgt   25      159025.694 ±      433.821  ns/op
-    ArrayStats.vectors        32768  avgt   25     1280031.237 ±    15290.684  ns/op
-    ArrayStats.vectors       262144  avgt   25    10222606.996 ±   151996.547  ns/op
-    ArrayStats.vectors      2097152  avgt   25    82278196.487 ±  1001081.215  ns/op
-    ArrayStats.vectors     16777216  avgt   25   675784141.416 ±  2663236.074  ns/op
-    ArrayStats.vectors    134217728  avgt   25  5427269120.160 ± 22720492.214  ns/op
+SimpleSum
+
+    Benchmark          (arraySize)  Mode  Cnt     Score   Error  Units
+    SimpleSum.arrays            64  avgt   25    40.804 ± 0.018  ns/op
+    SimpleSum.arrays           512  avgt   25   313.212 ± 0.705  ns/op
+    SimpleSum.arrays          4096  avgt   25  2456.077 ± 9.081  ns/op
+    SimpleSum.vectors           64  avgt   25    50.795 ± 0.280  ns/op
+    SimpleSum.vectors          512  avgt   25   716.558 ± 1.550  ns/op
+    SimpleSum.vectors         4096  avgt   25  5745.166 ± 2.368  ns/op
+
+SimpleSumNoSuperWord
+
+    Benchmark          (arraySize)  Mode  Cnt     Score    Error  Units
+    SimpleSum.arrays            64  avgt   25    40.808 ±  0.007  ns/op
+    SimpleSum.arrays           512  avgt   25   313.229 ±  0.750  ns/op
+    SimpleSum.arrays          4096  avgt   25  2454.166 ± 10.245  ns/op
+    SimpleSum.vectors           64  avgt   25    50.385 ±  0.282  ns/op
+    SimpleSum.vectors          512  avgt   25   717.259 ±  0.397  ns/op
+    SimpleSum.vectors         4096  avgt   25  5745.121 ±  1.763  ns/op
 
 # Analysis:
 
