@@ -186,6 +186,26 @@ alt="ComplexExpressionNoSuperWord" />
 alt="ArrayStats-J17-Intel" />
 </figure>
 
+## Disabling AutoSIMD (-Xjit:disableAutoSIMD)
+
+    Benchmark           (arraySize)  Mode  Cnt           Score          Error  Units
+    ArrayStats.arrays            64  avgt   25         120.298 ±        4.036  ns/op
+    ArrayStats.arrays           512  avgt   25         799.041 ±       10.839  ns/op
+    ArrayStats.arrays          4096  avgt   25       14687.847 ±      237.710  ns/op
+    ArrayStats.arrays         32768  avgt   25      174702.519 ±      205.520  ns/op
+    ArrayStats.arrays        262144  avgt   25     1417200.858 ±      715.427  ns/op
+    ArrayStats.arrays       2097152  avgt   25    11341230.185 ±     3035.337  ns/op
+    ArrayStats.arrays      16777216  avgt   25   129893848.968 ±   209750.800  ns/op
+    ArrayStats.arrays     134217728  avgt   25  1039659460.764 ±  2244013.877  ns/op
+    ArrayStats.vectors           64  avgt   25        2494.205 ±       33.483  ns/op
+    ArrayStats.vectors          512  avgt   25       20653.064 ±      420.587  ns/op
+    ArrayStats.vectors         4096  avgt   25      159025.694 ±      433.821  ns/op
+    ArrayStats.vectors        32768  avgt   25     1280031.237 ±    15290.684  ns/op
+    ArrayStats.vectors       262144  avgt   25    10222606.996 ±   151996.547  ns/op
+    ArrayStats.vectors      2097152  avgt   25    82278196.487 ±  1001081.215  ns/op
+    ArrayStats.vectors     16777216  avgt   25   675784141.416 ±  2663236.074  ns/op
+    ArrayStats.vectors    134217728  avgt   25  5427269120.160 ± 22720492.214  ns/op
+
 # Analysis:
 
 The results from our Java 17 run are counter to what we expect from the
@@ -239,6 +259,11 @@ Lets go back to <https://openjdk.org/jeps/438> and
 > implementations.
 >
 > —  JEP-438 and JEP-448
+
+The implementation of Java Vector API has direct support for x64 and
+AArch64 CPUs. As PPC64LE is neither of these JIT will produce non-vector
+code. When disable automatic SIMD, we can see a dramatic drop in
+performance, similar to when we force branchless vector code.
 
 # Conclusions.
 

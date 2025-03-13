@@ -174,6 +174,31 @@ ArrayStats.vectors    134217728  avgt   25   64577194.475 ±  349795.706  ns/op
 ```
 image::./assets/images/ArrayStats-J17-Intel.png[alt=ArrayStats-J17-Intel,width=480,height=640,align="center"]
 
+
+=== Disabling AutoSIMD (-Xjit:disableAutoSIMD)
+
+```
+Benchmark           (arraySize)  Mode  Cnt           Score          Error  Units
+ArrayStats.arrays            64  avgt   25         120.298 ±        4.036  ns/op
+ArrayStats.arrays           512  avgt   25         799.041 ±       10.839  ns/op
+ArrayStats.arrays          4096  avgt   25       14687.847 ±      237.710  ns/op
+ArrayStats.arrays         32768  avgt   25      174702.519 ±      205.520  ns/op
+ArrayStats.arrays        262144  avgt   25     1417200.858 ±      715.427  ns/op
+ArrayStats.arrays       2097152  avgt   25    11341230.185 ±     3035.337  ns/op
+ArrayStats.arrays      16777216  avgt   25   129893848.968 ±   209750.800  ns/op
+ArrayStats.arrays     134217728  avgt   25  1039659460.764 ±  2244013.877  ns/op
+ArrayStats.vectors           64  avgt   25        2494.205 ±       33.483  ns/op
+ArrayStats.vectors          512  avgt   25       20653.064 ±      420.587  ns/op
+ArrayStats.vectors         4096  avgt   25      159025.694 ±      433.821  ns/op
+ArrayStats.vectors        32768  avgt   25     1280031.237 ±    15290.684  ns/op
+ArrayStats.vectors       262144  avgt   25    10222606.996 ±   151996.547  ns/op
+ArrayStats.vectors      2097152  avgt   25    82278196.487 ±  1001081.215  ns/op
+ArrayStats.vectors     16777216  avgt   25   675784141.416 ±  2663236.074  ns/op
+ArrayStats.vectors    134217728  avgt   25  5427269120.160 ± 22720492.214  ns/op
+```
+
+
+
 == Analysis:
 
 The results from our Java 17 run are counter to what we expect from the orignal Java Vector API test runs as per https://medium.com/@tomerr90/javas-new-vector-api-how-fast-is-it-part-1-1b4c2b573610
@@ -203,6 +228,8 @@ ____
 ____
 It is not a goal to support vector instructions on CPU architectures other than x64 and AArch64. However it is important to state, as expressed in the goals, that the API must not rule out such implementations.
 ____
+
+The implementation of Java Vector API has direct support for x64 and AArch64 CPUs. As PPC64LE is neither of these JIT will produce non-vector code. When disable automatic SIMD, we can see a dramatic drop in performance, similar to when we force branchless vector code.
 
 == Conclusions.
 
