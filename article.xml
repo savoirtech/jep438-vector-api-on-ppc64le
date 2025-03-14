@@ -256,9 +256,9 @@ ArrayStats.vectors    134217728  avgt   25  4469479803.120 ± 33473532.559  ns/o
 <informalfigure>
 <mediaobject>
 <imageobject>
-<imagedata fileref="./assets/images/ArrayStats-J21-DisableSIMD.png" contentwidth="480" contentdepth="640" align="center"/>
+<imagedata fileref="./assets/images/ArrayStats-J21-NoSuperWord.png" contentwidth="480" contentdepth="640" align="center"/>
 </imageobject>
-<textobject><phrase>ArrayStats-J21-DisableSIMD</phrase></textobject>
+<textobject><phrase>ArrayStats-J21-NoSuperWord</phrase></textobject>
 </mediaobject>
 </informalfigure>
 </section>

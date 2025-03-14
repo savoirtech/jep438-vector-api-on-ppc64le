@@ -209,7 +209,7 @@ ArrayStats.vectors      2097152  avgt   25    69550906.497 ±   310485.800  ns/o
 ArrayStats.vectors     16777216  avgt   25   558204314.529 ±  3352360.806  ns/op
 ArrayStats.vectors    134217728  avgt   25  4469479803.120 ± 33473532.559  ns/op
 ```
-image::./assets/images/ArrayStats-J21-DisableSIMD.png[alt=ArrayStats-J21-DisableSIMD,width=480,height=640,align="center"]
+image::./assets/images/ArrayStats-J21-NoSuperWord.png[alt=ArrayStats-J21-NoSuperWord,width=480,height=640,align="center"]
 
 == Analysis:
 

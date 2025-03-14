@@ -224,8 +224,8 @@ alt="SimpleSum-J21-DisableSIMD" />
     ArrayStats.vectors    134217728  avgt   25  4469479803.120 ± 33473532.559  ns/op
 
 <figure>
-<img src="./assets/images/ArrayStats-J21-DisableSIMD.png"
-alt="ArrayStats-J21-DisableSIMD" />
+<img src="./assets/images/ArrayStats-J21-NoSuperWord.png"
+alt="ArrayStats-J21-NoSuperWord" />
 </figure>
 
 # Analysis:
