@@ -186,7 +186,7 @@ alt="ComplexExpressionNoSuperWord" />
 alt="ArrayStats-J17-Intel" />
 </figure>
 
-## Disabling AutoSIMD (-Xjit:disableAutoSIMD)
+## Disabling AutoSIMD (-Xjit:disableAutoSIMD on OpenJ9)
 
 SimpleSum
 
@@ -201,6 +201,31 @@ SimpleSum
 <figure>
 <img src="./assets/images/SimpleSum-J21-DisableSIMD.png"
 alt="SimpleSum-J21-DisableSIMD" />
+</figure>
+
+## ArrayStats -XX:-UseSuperWord (disable the transformation of scalar operations into superword)
+
+    Benchmark           (arraySize)  Mode  Cnt           Score          Error  Units
+    ArrayStats.arrays            64  avgt   25         178.516 ±        3.212  ns/op
+    ArrayStats.arrays           512  avgt   25        1398.446 ±       20.894  ns/op
+    ArrayStats.arrays          4096  avgt   25       20925.980 ±      188.310  ns/op
+    ArrayStats.arrays         32768  avgt   25      184454.466 ±      308.215  ns/op
+    ArrayStats.arrays        262144  avgt   25     1483778.492 ±      523.169  ns/op
+    ArrayStats.arrays       2097152  avgt   25    11666892.370 ±   405978.305  ns/op
+    ArrayStats.arrays      16777216  avgt   25   101042593.795 ±  2159103.957  ns/op
+    ArrayStats.arrays     134217728  avgt   25   810945465.917 ±  9618531.723  ns/op
+    ArrayStats.vectors           64  avgt   25        2023.417 ±       15.490  ns/op
+    ArrayStats.vectors          512  avgt   25       17055.465 ±      142.750  ns/op
+    ArrayStats.vectors         4096  avgt   25      136535.648 ±      892.288  ns/op
+    ArrayStats.vectors        32768  avgt   25     1098215.786 ±     5724.283  ns/op
+    ArrayStats.vectors       262144  avgt   25     8701632.633 ±    59842.228  ns/op
+    ArrayStats.vectors      2097152  avgt   25    69550906.497 ±   310485.800  ns/op
+    ArrayStats.vectors     16777216  avgt   25   558204314.529 ±  3352360.806  ns/op
+    ArrayStats.vectors    134217728  avgt   25  4469479803.120 ± 33473532.559  ns/op
+
+<figure>
+<img src="./assets/images/ArrayStats-J21-DisableSIMD.png"
+alt="ArrayStats-J21-DisableSIMD" />
 </figure>
 
 # Analysis:
