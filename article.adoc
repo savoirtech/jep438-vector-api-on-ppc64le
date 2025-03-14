@@ -40,23 +40,23 @@ image::./assets/images/SimpleSum.png[alt=SimpleSum,width=480,height=640,align="c
 
 === SimpleSumNoSuperWord
 ```
-Benchmark          (arraySize)  Mode  Cnt         Score        Error  Units
-SimpleSum.arrays            64  avgt   25        34.786 ±      0.008  ns/op
-SimpleSum.arrays           512  avgt   25       158.972 ±      0.020  ns/op
-SimpleSum.arrays          4096  avgt   25      1166.046 ±      0.139  ns/op
-SimpleSum.arrays         32768  avgt   25      9212.710 ±     67.196  ns/op
-SimpleSum.arrays        262144  avgt   25     83257.275 ±   1956.047  ns/op
-SimpleSum.arrays       2097152  avgt   25    708257.796 ±   7180.380  ns/op
-SimpleSum.arrays      16777216  avgt   25   9079137.836 ±  12308.766  ns/op
-SimpleSum.arrays     134217728  avgt   25  69618031.122 ± 189817.197  ns/op
-SimpleSum.vectors           64  avgt   25        27.654 ±      0.006  ns/op
-SimpleSum.vectors          512  avgt   25       144.075 ±      0.032  ns/op
-SimpleSum.vectors         4096  avgt   25      1035.717 ±      0.079  ns/op
-SimpleSum.vectors        32768  avgt   25      8182.103 ±    144.926  ns/op
-SimpleSum.vectors       262144  avgt   25     81122.328 ±   2147.183  ns/op
-SimpleSum.vectors      2097152  avgt   25    688177.372 ±   5897.562  ns/op
-SimpleSum.vectors     16777216  avgt   25   8960951.699 ±  25284.762  ns/op
-SimpleSum.vectors    134217728  avgt   25  68847173.025 ± 176985.022  ns/op
+Benchmark                     (arraySize)  Mode  Cnt          Score        Error  Units
+SimpleSumNoSuperWord.arrays            64  avgt   25         60.631 ±      0.017  ns/op
+SimpleSumNoSuperWord.arrays           512  avgt   25        390.636 ±      0.063  ns/op
+SimpleSumNoSuperWord.arrays          4096  avgt   25       3000.841 ±      0.256  ns/op
+SimpleSumNoSuperWord.arrays         32768  avgt   25      23913.976 ±      7.919  ns/op
+SimpleSumNoSuperWord.arrays        262144  avgt   25     227423.743 ±    129.359  ns/op
+SimpleSumNoSuperWord.arrays       2097152  avgt   25    1532705.888 ±    910.341  ns/op
+SimpleSumNoSuperWord.arrays      16777216  avgt   25   12567922.151 ±  11467.932  ns/op
+SimpleSumNoSuperWord.arrays     134217728  avgt   25  100049666.836 ± 160459.768  ns/op
+SimpleSumNoSuperWord.vectors           64  avgt   25         32.864 ±      0.017  ns/op
+SimpleSumNoSuperWord.vectors          512  avgt   25        148.442 ±      0.094  ns/op
+SimpleSumNoSuperWord.vectors         4096  avgt   25       1039.094 ±      0.086  ns/op
+SimpleSumNoSuperWord.vectors        32768  avgt   25       8293.992 ±    163.019  ns/op
+SimpleSumNoSuperWord.vectors       262144  avgt   25      81072.922 ±    959.954  ns/op
+SimpleSumNoSuperWord.vectors      2097152  avgt   25     706270.498 ±   8207.936  ns/op
+SimpleSumNoSuperWord.vectors     16777216  avgt   25    8941515.137 ±  21745.836  ns/op
+SimpleSumNoSuperWord.vectors    134217728  avgt   25   68663039.980 ± 186121.838  ns/op
 ```
 image::./assets/images/SimpleSumNoSuperWord.png[alt=SimpleSumNoSuperWord,width=480,height=640,align="center"]
 
@@ -84,23 +84,23 @@ image::./assets/images/ComplexExpression.png[alt=ComplexExpression,width=480,hei
 
 === ComplexExpressionNoSuperWord
 ```
-Benchmark                  (arraySize)  Mode  Cnt          Score       Error  Units
-ComplexExpression.arrays            64  avgt   25        104.995 ±     0.015  ns/op
-ComplexExpression.arrays           512  avgt   25        709.072 ±     0.039  ns/op
-ComplexExpression.arrays          4096  avgt   25       5547.395 ±     0.298  ns/op
-ComplexExpression.arrays         32768  avgt   25      44448.983 ±   293.638  ns/op
-ComplexExpression.arrays        262144  avgt   25     370065.764 ±    33.169  ns/op
-ComplexExpression.arrays       2097152  avgt   25    2846643.263 ±   620.952  ns/op
-ComplexExpression.arrays      16777216  avgt   25   22780983.763 ±  1811.682  ns/op
-ComplexExpression.arrays     134217728  avgt   25  182261072.352 ± 15993.163  ns/op
-ComplexExpression.vectors           64  avgt   25         94.111 ±     0.009  ns/op
-ComplexExpression.vectors          512  avgt   25        700.614 ±     0.026  ns/op
-ComplexExpression.vectors         4096  avgt   25       5537.477 ±     0.305  ns/op
-ComplexExpression.vectors        32768  avgt   25      44234.565 ±     2.065  ns/op
-ComplexExpression.vectors       262144  avgt   25     372522.025 ±  1811.598  ns/op
-ComplexExpression.vectors      2097152  avgt   25    2845631.847 ±   555.375  ns/op
-ComplexExpression.vectors     16777216  avgt   25   22788875.459 ±  7985.146  ns/op
-ComplexExpression.vectors    134217728  avgt   25  182284124.759 ± 18715.489  ns/op
+Benchmark                             (arraySize)  Mode  Cnt          Score       Error  Units
+ComplexExpressionNoSuperWord.arrays            64  avgt   25        204.415 ±     0.009  ns/op
+ComplexExpressionNoSuperWord.arrays           512  avgt   25       1564.593 ±     0.093  ns/op
+ComplexExpressionNoSuperWord.arrays          4096  avgt   25      12413.537 ±     1.770  ns/op
+ComplexExpressionNoSuperWord.arrays         32768  avgt   25      99132.151 ±     6.331  ns/op
+ComplexExpressionNoSuperWord.arrays        262144  avgt   25     827805.352 ±    49.440  ns/op
+ComplexExpressionNoSuperWord.arrays       2097152  avgt   25    6348770.039 ±   466.195  ns/op
+ComplexExpressionNoSuperWord.arrays      16777216  avgt   25   50770345.853 ±  3772.581  ns/op
+ComplexExpressionNoSuperWord.arrays     134217728  avgt   25  406104270.050 ± 31769.452  ns/op
+ComplexExpressionNoSuperWord.vectors           64  avgt   25         94.131 ±     0.005  ns/op
+ComplexExpressionNoSuperWord.vectors          512  avgt   25        700.841 ±     0.050  ns/op
+ComplexExpressionNoSuperWord.vectors         4096  avgt   25       5537.868 ±     0.276  ns/op
+ComplexExpressionNoSuperWord.vectors        32768  avgt   25      44607.321 ±   344.487  ns/op
+ComplexExpressionNoSuperWord.vectors       262144  avgt   25     373980.780 ±  1624.161  ns/op
+ComplexExpressionNoSuperWord.vectors      2097152  avgt   25    2845735.861 ±   296.528  ns/op
+ComplexExpressionNoSuperWord.vectors     16777216  avgt   25   22786963.260 ±  2302.327  ns/op
+ComplexExpressionNoSuperWord.vectors    134217728  avgt   25  182256404.289 ± 21236.016  ns/op
 ```
 image::./assets/images/ComplexExpressionNoSuperWord.png[alt=ComplexExpressionNoSuperWord,width=480,height=640,align="center"]
 
@@ -192,11 +192,11 @@ image::./assets/images/SimpleSum-J21-DisableSIMD.png[alt=SimpleSum-J21-DisableSI
 
 == Analysis:
 
-The results from our Java 17 run are counter to what we expect from the orignal Java Vector API test runs as per https://medium.com/@tomerr90/javas-new-vector-api-how-fast-is-it-part-1-1b4c2b573610
+The results from our Java 17 show performance improvements for pure vectorized work loads, however these gains are not as dramatic as those seen in the original x64 based lab:
 
-Re-running with Java 21 did not change the outcome for ArrayStats.
+https://medium.com/@tomerr90/javas-new-vector-api-how-fast-is-it-part-1-1b4c2b573610
 
-The implementation of Java Vector API has direct support for x64 and AArch64 CPUs. As PPC64LE is neither of these when JIT produces code, it'll be non-optimized to the platform. When disable automatic SIMD, we can see a dramatic drop in performance, similar to when we force branch-less vector code.
+In the case of PPC64LE, the "branch-less" ArrayStats tests show a degradation of performance compared to a non-vector implementation. The loss of performance is deep enough that Java developers on PPC64LE should take note; vectorizing if-statements on this platform does not appear to provide a performance boost as seen in other workloads.
 
 
 === Why?
@@ -225,8 +225,8 @@ ____
 
 == Conclusions.
 
-While Java Vector API explicitly does not support PPC64LE at this time, we can observe that JIT is protecting users from general loss of performance IF vectors are utilized -  When 'branch-less code' is desired (vectorizing if-statements) we see performance degradation.
+While Java Vector API explicitly does not support PPC64LE at this time, we can observe that in Simple and/or complex expressions (math operations) Vectors will provide a performance improvement  -  When 'branch-less code' is desired (vectorizing if-statements) we see performance degradation.
 
-For end users whom may not be familiar with the various iterations of Vector API the above analysis may prove useful when attempting to debug / test projects using this library.
+For Java developers building new code on PPC64LE or porting an existing application to the platform, please take note of our results, and test accordingly.
 
 As a measure of hope for PPC64LE users, the JEP does state that it does not rule out the possibility to implement future support.
